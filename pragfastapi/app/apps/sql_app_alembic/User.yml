@@ -1,0 +1,27 @@
+User: 
+  __tablename__: "user"
+  attributes: 
+    id: 
+      type: Integer
+      primarykey: True
+      index: True
+    email: 
+      type: String
+      unique: True
+      index: True
+      nullable: False
+    hashed_password: 
+      type: String
+      nullable: False
+    is_active: 
+      type: Boolean
+      default: True
+      nullable: False
+    is_superuser: 
+      type: Boolean
+      default: False
+      nullable: False
+    items: 
+      type: null
+      relationship: "Item"
+      back_populates: "owner"

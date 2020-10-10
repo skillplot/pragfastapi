@@ -1,0 +1,21 @@
+Item: 
+  __tablename__: "item"
+  attributes: 
+    id: 
+      type: Integer
+      primarykey: True
+      index: True
+    title: 
+      type: String
+      index: True
+    description: 
+      type: String
+      index: True
+      Optional: True
+    owner_id: 
+      type: Integer
+      ForeignKey: "user.id"
+    owner: 
+      type: null
+      relationship: "User"
+      back_populates: "item"

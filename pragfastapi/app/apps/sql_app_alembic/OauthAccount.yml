@@ -1,0 +1,24 @@
+OauthAccount: 
+  __tablename__: "OauthAccount"
+  attributes: 
+    id: 
+      type: Integer
+      primarykey: True
+      index: True
+    oauth_name: 
+      type: String
+      index: True
+      nullable: False
+    access_token: 
+      type: String
+      nullable: False
+    refresh_token: 
+      type: String
+      nullable: False
+    account_id: 
+      type: String
+      index: True
+      nullable: False
+    account_email: 
+      type: String
+      nullable: False

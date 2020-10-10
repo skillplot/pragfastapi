@@ -1,0 +1,48 @@
+User: 
+  __tablename__: "user"
+  attributes: 
+    uuid: 
+      type: Text
+      length: 36
+      unique: True
+      nullable: False
+      index: True
+    id: 
+      type: Integer
+      primarykey: True
+      nullable: False
+      index: True
+    full_name: 
+      type: String
+      nullable: False
+      index: True
+    username: 
+      type: String
+      unique: True
+      nullable: False
+      index: True
+    email: 
+      type: String
+      unique: True
+      nullable: False
+      index: True
+    alternate_email: 
+      type: String
+      unique: True
+      nullable: False
+      index: True
+    hashed_password: 
+      type: String
+      nullable: False
+    is_active: 
+      type: Boolean
+      default: True
+      nullable: False
+    is_superuser: 
+      type: Boolean
+      default: False
+      nullable: False
+    items: 
+      type: null
+      relationship: "Item"
+      back_populates: "owner"

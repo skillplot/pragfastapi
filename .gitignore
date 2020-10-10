@@ -1,0 +1,59 @@
+## disallow files/folders in same directory as the .gitignore file
+/*
+
+## allow some files
+!.gitignore
+!.gitmodules
+!*.md
+!*.adoc
+!*.yml
+!*.sh
+!*.txt
+!*.py
+!*.cfg
+!*.example
+!*.toml
+!LICENSE*
+
+!pragfastapi/
+!docs/
+# !_site/
+
+## disallow some specific files in the allowed list
+**/*~
+**/*.swp
+**/nohup.*
+**/*.log
+**/*bk
+**/temp.*
+**/*.local.*
+**/README.html
+**/node_modules
+**/*.pyc
+**/*__pycache__
+**/*.ipynb_checkpoints
+**/*.pytest_cache
+**/*.py.*
+# **/*.mp4
+# **/*.mp3
+
+**/local
+**/.local
+**/.vscode
+**/.gradle
+**/.idea
+**/.externalNativeBuild
+**/gradle
+**/captures
+**/screenshot
+**/*.iml
+**/.DS_Store
+**/.gradle
+**/.idea
+**/.externalNativeBuild
+
+**/build
+**/dist
+**/bin
+**/*.egg-info
+**/*.egg

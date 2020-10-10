@@ -1,0 +1,29 @@
+Item: 
+  __tablename__: "item"
+  attributes: 
+    uuid: 
+      type: Text
+      length: 36
+      unique: True
+      nullable: False
+      index: True
+    id: 
+      type: Integer
+      primarykey: True
+      nullable: False
+      index: True
+    title: 
+      type: String
+      nullable: False
+      index: True
+    description: 
+      type: String
+      index: True
+      Optional: True
+    owner_id: 
+      type: Integer
+      ForeignKey: "user.id"
+    owner: 
+      type: null
+      relationship: "User"
+      back_populates: "items"

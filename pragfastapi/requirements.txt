@@ -1,0 +1,13 @@
+fastapi==0.61.1
+uvicorn==0.11.8
+Werkzeug==0.16.0
+tqdm==4.41.0
+Click==7.0
+arrow==0.15.4
+easydict==1.9
+mkdocs==1.0.4
+opencv-contrib-python==4.4.0.42
+opencv-python==4.4.0.42
+python-dotenv==0.10.3
+PyYAML==5.2
+redis==3.3.11
